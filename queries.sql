@@ -15,3 +15,7 @@ SELECT city.name, city.population
 FROM city
 INNER JOIN country 
 WHERE country.name = "Germany" AND city.countrycode = country.code;
+SELECT country.name, country.SurfaceArea
+FROM country
+ORDER BY country.SurfaceArea asc
+LIMIT 5;
